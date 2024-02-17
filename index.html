@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart tiketing - Home</title>
+
+    <!-- daisy ui and tailwind css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="lg:max-w-6xl mx-auto mt-4 px-2 lg:px-0">
+      <!-- navber  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden font-bold text-[#030712] text-2xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <a class="text-3xl font-bold text-[#030712]">P-Ticket</a>
+        </div>
+
+        <div class="navbar-center hidden items-center lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 *:ml-4 text-[#030712B3] text-[16px]"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <a
+            class="btn border-[1px] border-solid border-[#1DD1001A] bg-[#1cd10017] text-[#1DD100] text-xl px-6 flex items-center"
+            >Bus <span><img src="images/bus-icon.png" alt="" /></span
+          ></a>
+        </div>
+      </div>
+      <!-- banner section  -->
+      <section
+        class="bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-[100%_100%] lg:h-[500px] rounded-3xl mt-4 py-16 relative"
+      >
+        <div class="text-center lg:pt-4 space-y-5 lg:space-y-8">
+          <h1 class="text-3xl lg:text-5xl font-bold text-white">
+            End-to-End Travel with
+          </h1>
+          <h1 class="text-[#1DD100] text-3xl lg:text-5xl font-bold">
+            P Paribahan
+          </h1>
+
+          <p class="text-white">
+            Yes, you can run unit tests and view the results directly within the
+            <br />
+            app. The integrated testing features allow for a streamlined .
+          </p>
+
+          <button class="px-8 py-4 font-bold bg-[#1DD100] rounded-lg">
+            Buy Tickets
+          </button>
+        </div>
+        <!-- card banner  -->
+
+        <div
+          class="flex flex-col lg:flex-row gap-5 justify-around mb-0 w-[70%] mx-auto *:flex *:gap-4 *:bg-white *:rounded-xl *:border-b-[4px] *:border-solid *:border-[#1DD100] *:p-4 absolute -bottom-[300px] lg:-bottom-[50px] left-[15%]"
+        >
+          <div>
+            <img src="images/people.png" alt="pepole" />
+            <div>
+              <h1 class="font-bold text-2xl">500K+</h1>
+              <p class="text-[#030712B3]">Registered users</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/ticket-cupon.png" alt="pepole" />
+            <div>
+              <h1 class="font-bold text-2xl">1.7 lacks</h1>
+              <p class="text-[#030712B3]">Tickets sold</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/stoppage.png" alt="pepole" />
+            <div>
+              <h1 class="font-bold text-2xl">80K+</h1>
+              <p class="text-[#030712B3]">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>

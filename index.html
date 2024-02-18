@@ -530,14 +530,15 @@
               </div>
               <div class="bg-white py-2 flex justify-between px-4 rounded-lg">
                 <input
+                  id="cupon-code"
                   type="text"
                   placeholder="Have any copupon?"
                   class="outline-none"
                 />
                 <button
+                  disabled
                   id="apply-btn"
                   class="text-white bg-[#1cd10035] px-6 py-2 rounded-lg"
-                  disabled
                 >
                   Apply
                 </button>
@@ -558,9 +559,10 @@
               />
               <p class="py-4 text-xl font-bold">Phone Number*</p>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter your phone number"
                 class="input input-bordered w-full focus:outline-none"
+                id="phone-number"
               />
               <p class="py-4 text-xl font-bold">Email ID</p>
               <input
@@ -570,9 +572,11 @@
               />
 
               <input
+                disabled
                 type="button"
                 value="Next"
                 class="input input-bordered w-full focus:outline-none mt-6 bg-[#1DD100] cursor-pointer text-white font-bold"
+                id="next-btn"
               />
 
               <div

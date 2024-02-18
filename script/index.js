@@ -35,13 +35,27 @@ function updatCount() {
   setTextElement("total-seat", seatLeft);
   setTextElement("seat-count", seatCount);
   setTextElement("total-price", totalPrice);
-  setTextElement("grand-price", grandPrice);
+  setTextElement("grand-price", totalPrice);
   // apply btn enable & disable
   if (limitedTicketCount >= 4) {
     getElementId("apply-btn").disabled = false;
     getElementId("apply-btn").style.backgroundColor = "#1DD100";
   }
+  validationNextBtn();
 }
+
+// apply cupon function
+
+getElementId("apply-btn").addEventListener("click", function () {
+  const cupon = getElementId("cupon-code").value;
+  if (cupon === "NEW15") {
+    let discountPrice = (grandPrice * 15) / 100;
+    getElementId("grand-price").innerText = grandPrice - discountPrice;
+  } else if (cupon === "Couple 20") {
+    let discountPrice = (grandPrice * 20) / 100;
+    getElementId("grand-price").innerText = grandPrice - discountPrice;
+  }
+});
 
 // add item function
 function addSeatItem(element) {
@@ -58,4 +72,19 @@ function addSeatItem(element) {
   div.appendChild(economoyTag);
   div.appendChild(priceTag);
   seatItemList.appendChild(div);
+}
+
+// next btn function
+const phoneNumber = getElementId("phone-number");
+phoneNumber.addEventListener("keyup", function () {
+  validationNextBtn();
+});
+
+// next btn  validation
+function validationNextBtn() {
+  if (getElementId("phone-number").value === "" || limitedTicketCount <= 0) {
+    getElementId("next-btn").disabled = true;
+  } else {
+    getElementId("next-btn").disabled = false;
+  }
 }

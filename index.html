@@ -185,24 +185,26 @@
           The integrated testing features allow for a streamlined .
         </p>
         <div
-          class="flex justify-between items-center max-w-6xl mx-auto bg-white px-4 py-8 rounded-xl gap-4 relative mt-10"
+          class="flex flex-col lg:flex-row lg:justify-between items-center lg:max-w-6xl mx-auto bg-white px-4 py-8 rounded-xl gap-4 relative mt-10"
         >
-          <div class="w-[70%]">
-            <div class="flex justify-between">
+          <div class="lg:w-[70%]">
+            <div class="flex flex-col lg:flex-row justify-between">
               <div class="flex gap-4 items-center">
                 <img src="images/bus-logo.png" alt="bus-logo" />
                 <div>
-                  <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                  <h1 class="text-xl lg:text-3xl font-bold">
+                    Greenline Paribahan
+                  </h1>
                   <p class="pt-2 paragraph-color">
                     Coach-009-WEB ! AC_Business
                   </p>
                 </div>
               </div>
               <button
-                class="bg-[#1cd10017] flex gap-4 px-8 py-3 items-center text-xl rounded-lg text-[#1DD100]"
+                class="bg-[#1cd10017] flex justify-center mt-4 lg:mt-0 gap-4 lg:px-8 py-3 items-center text-xl rounded-lg text-[#1DD100]"
               >
-                <img src="images/seat-green-filled.png" alt="seat-green" /> 40
-                Seats left
+                <img src="images/seat-green-filled.png" alt="seat-green" />
+                40 Seats left
               </button>
             </div>
 
@@ -219,42 +221,34 @@
                 <p class="paragraph-color">Departure Time</p>
                 <p class="font-bold">9:00 PM</p>
               </div>
-              <div class="py-5 flex justify-between">
-                <button
-                  class="bg-[#0307120D] px-6 py-3 rounded-lg text-[#030712b5] font-semibold"
-                >
-                  Boarding Point - Laxmipur
-                </button>
-                <button
-                  class="bg-[#0307120D] px-6 py-3 rounded-lg text-[#030712b5] font-semibold"
-                >
-                  Dropping Point - Bogura
-                </button>
-                <button
-                  class="bg-[#0307120D] px-10 py-3 rounded-lg text-[#030712b5] font-semibold"
-                >
-                  Est. Time - 11 Hour
-                </button>
+              <div
+                class="py-5 flex flex-col lg:flex-row *:mt-3 lg:*:mt-0 justify-between *:bg-[#0307120D] *:rounded-lg *:text-[#030712b5] *:font-semibold *:px-6 *:py-5"
+              >
+                <button>Boarding Point - Laxmipur</button>
+                <button>Dropping Point - Bogura</button>
+                <button>Est. Time - 11 Hour</button>
               </div>
             </div>
           </div>
 
-          <div class="w-[20%] text-center">
+          <div class="lg:w-[20%] text-center">
             <img class="block mx-auto" src="images/fare.png" alt="fare" />
             <h1 class="text-2xl font-bold">550 Taka</h1>
             <p class="paragraph-color">Per Seat</p>
           </div>
 
           <img
-            class="absolute right-[220px] top-0 bottom-0 h-[360px]"
+            class="absolute hidden lg:block right-[220px] h-[374px]"
             src="images/info-devider.png"
             alt="info-devider"
           />
         </div>
 
         <!-- select your seat  -->
-        <div class="bg-white max-w-6xl mx-auto mt-8 rounded-xl flex py-6">
-          <div class="w-[60%] px-6">
+        <div
+          class="bg-white lg:max-w-6xl mx-auto mt-8 rounded-xl flex flex-col lg:flex-row py-6"
+        >
+          <div class="lg:w-[60%] lg:px-6">
             <div class="py-2 border-b-[1px] border-dashed border-[#03071233]">
               <h1 class="text-xl font-bold pb-2">Select Your Seat</h1>
             </div>
@@ -279,192 +273,312 @@
             </div>
 
             <!-- seat start -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold">
               <div class="w-[50%] flex justify-between items-center">
                 <span>A</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   A1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   A2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>A3</button>
                 <button>A4</button>
               </div>
             </div>
             <!-- seat sririal b -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>B</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   B1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   B2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>B3</button>
                 <button>B4</button>
               </div>
             </div>
             <!-- seat sirial c -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>C</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   C1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   C2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>C3</button>
                 <button>C4</button>
               </div>
             </div>
             <!-- seat sirial d -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>D</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   D1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   D2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>D3</button>
                 <button>D4</button>
               </div>
             </div>
             <!-- seat sirial e -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>E</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   E1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   E2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>E3</button>
                 <button>E4</button>
               </div>
             </div>
             <!-- seat sirial F -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>F</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   F1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   F2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>F3</button>
                 <button>F4</button>
               </div>
             </div>
             <!-- seat sirial G -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>G</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   G1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   G2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>G3</button>
                 <button>G4</button>
               </div>
             </div>
             <!-- seat sirial H -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>H</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   H1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   H2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>H3</button>
                 <button>H4</button>
               </div>
             </div>
             <!-- seat sirial I -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>I</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   I1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   I2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>I3</button>
                 <button>I4</button>
               </div>
             </div>
             <!-- SEAT SIRIAL J -->
-            <div class="flex gap-10 text-[#030712b5] font-semibold mt-6">
+            <div class="flex lg:gap-10 text-[#030712b5] font-semibold mt-6">
               <div class="w-[50%] flex justify-between items-center">
                 <span>J</span>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   J1
                 </button>
-                <button class="bg-[#0307120D] px-[50px] py-3 rounded-lg">
+                <button
+                  class="bg-[#0307120D] px-6 lg:px-[50px] py-3 rounded-lg"
+                >
                   J2
                 </button>
               </div>
               <div
-                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-[50px] *:rounded-lg"
+                class="w-[50%] flex justify-around ml-6 *:bg-[#0307120D] *:px-6 lg:*:px-[50px] *:rounded-lg"
               >
                 <button>J3</button>
                 <button>J4</button>
               </div>
             </div>
           </div>
-
+          <!-- ticket calculate  -->
           <div
-            class="w-[40%] px-6 border-l-[1px] border-dashed border-[#03071233]"
+            class="lg:w-[40%] lg:px-6 lg:border-l-[1px] lg:border-dashed lg:border-[#03071233]"
           >
             <div class="py-2 border-b-[1px] border-dashed border-[#03071233]">
               <h1 class="text-xl font-bold pb-2">Select Your Seat</h1>
+            </div>
+            <div class="bg-[#F7F8F8] p-6 mt-6 rounded-lg">
+              <div
+                class="flex items-center justify-between font-bold paragraph-color text-xl border-b-[1px] border-dashed border-[#03071233] pb-3"
+              >
+                <p>
+                  Seat
+                  <span
+                    class="bg-[#1DD100] px-3 rounded-md text-[13px] text-white"
+                    >0</span
+                  >
+                </p>
+                <p>Class</p>
+                <p>Price</p>
+              </div>
+              <div
+                class="*:flex *:items-center *:justify-between *:paragraph-color border-b-[1px] border-solid py-4 border-[#03071233] pb-3"
+              >
+                <div>
+                  <p>C2</p>
+                  <p>Economoy</p>
+                  <p>550</p>
+                </div>
+                <div class="mt-4">
+                  <p>C2</p>
+                  <p>Economoy</p>
+                  <p>550</p>
+                </div>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="text-xl font-bold">Total Price</p>
+                <p class="text-xl font-bold">BDT <span>1100</span></p>
+              </div>
+              <div class="bg-white py-2 flex justify-between px-4 rounded-lg">
+                <input
+                  type="text"
+                  placeholder="Have any copupon?"
+                  class="outline-none"
+                />
+                <button class="text-white bg-[#1DD100] px-6 py-2 rounded-lg">
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="text-xl font-bold">Grand Total</p>
+                <p class="text-xl font-bold">BDT <span>1100</span></p>
+              </div>
+            </div>
+            <div>
+              <p class="py-4 text-xl font-bold">Passenger Name*</p>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered w-full focus:outline-none"
+              />
+              <p class="py-4 text-xl font-bold">Phone Number*</p>
+              <input
+                type="text"
+                placeholder="Enter your phone number"
+                class="input input-bordered w-full focus:outline-none"
+              />
+              <p class="py-4 text-xl font-bold">Email ID</p>
+              <input
+                type="text"
+                placeholder="Enter your email id"
+                class="input input-bordered w-full focus:outline-none"
+              />
+
+              <input
+                type="button"
+                value="Next"
+                class="input input-bordered w-full focus:outline-none mt-6 bg-[#1DD100] cursor-pointer text-white font-bold"
+              />
+
+              <div
+                class="flex justify-center mt-4 gap-5 lg:*:text-xl *:underline *:cursor-pointer *:paragraph-color"
+              >
+                <span>Terms and Conditions</span>
+                <span>Cancellation Policy</span>
+              </div>
             </div>
           </div>
         </div>

@@ -12,6 +12,14 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style  -->
+
+    <style>
+      .paragraph-color {
+        color: #030712b3;
+      }
+    </style>
   </head>
   <body>
     <header class="lg:max-w-6xl mx-auto mt-4 px-2 lg:px-0">
@@ -113,9 +121,9 @@
       </section>
     </header>
 
-    <main class="*:max-w-6xl *:mx-auto *:mt-4">
+    <main>
       <!-- Best offers for you  -->
-      <section class="lg:pt-12 px-2">
+      <section class="lg:pt-12 px-2 max-w-6xl mx-auto mt-4">
         <h1 class="text-center pt-4 lg:pt-12 text-3xl font-bold">
           Best offers for you
         </h1>
@@ -164,6 +172,88 @@
             See All Offers
           </button>
         </div>
+      </section>
+      <!-- P.H Paribahan section started -->
+
+      <section
+        class="lg:pt-12 px-2 bg-[#F7F8F8] border-t-[3px] border-solid border-[#1DD100] rounded-t-3xl mt-24"
+      >
+        <h1 class="text-center text-3xl font-bold">P.H Paribahan</h1>
+        <p class="text-center pt-4 text-[#030712B3]">
+          Yes, you can run unit tests and view the results directly within the
+          app. <br />
+          The integrated testing features allow for a streamlined .
+        </p>
+        <div
+          class="flex justify-between items-center max-w-6xl mx-auto bg-white px-4 py-8 rounded-xl gap-4 relative mt-10"
+        >
+          <div class="w-[70%]">
+            <div class="flex justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="images/bus-logo.png" alt="bus-logo" />
+                <div>
+                  <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                  <p class="pt-2 paragraph-color">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <button
+                class="bg-[#1cd10017] flex gap-4 px-8 py-3 items-center text-xl rounded-lg text-[#1DD100]"
+              >
+                <img src="images/seat-green-filled.png" alt="seat-green" /> 40
+                Seats left
+              </button>
+            </div>
+
+            <div class="bg-[#F7F8F8] px-5 rounded-xl mt-6">
+              <div
+                class="flex justify-between border-b-[1px] border-dashed border-[#03071233] py-4"
+              >
+                <p class="paragraph-color">Route</p>
+                <p class="font-bold">Dhaka - Sylhet</p>
+              </div>
+              <div
+                class="flex justify-between border-b-[1px] border-dashed border-[#03071233] py-4"
+              >
+                <p class="paragraph-color">Departure Time</p>
+                <p class="font-bold">9:00 PM</p>
+              </div>
+              <div class="py-5 flex justify-between">
+                <button
+                  class="bg-[#0307120D] px-6 py-3 rounded-lg text-[#030712b5] font-semibold"
+                >
+                  Boarding Point - Laxmipur
+                </button>
+                <button
+                  class="bg-[#0307120D] px-6 py-3 rounded-lg text-[#030712b5] font-semibold"
+                >
+                  Dropping Point - Bogura
+                </button>
+                <button
+                  class="bg-[#0307120D] px-10 py-3 rounded-lg text-[#030712b5] font-semibold"
+                >
+                  Est. Time - 11 Hour
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[20%] text-center">
+            <img class="block mx-auto" src="images/fare.png" alt="fare" />
+            <h1 class="text-2xl font-bold">550 Taka</h1>
+            <p class="paragraph-color">Per Seat</p>
+          </div>
+
+          <img
+            class="absolute right-[220px] top-0 bottom-0 h-[360px]"
+            src="images/info-devider.png"
+            alt="info-devider"
+          />
+        </div>
+
+        <!-- select your seat  -->
+        <div class="h-[300px]"></div>
       </section>
     </main>
   </body>

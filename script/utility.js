@@ -3,15 +3,15 @@ function getElementId(element) {
   return elementId;
 }
 // convrert number function
-function convertNumber(element, leftValue) {
+function convertNumber(element) {
   const value = getElementId(element).innerText;
   const convertValue = parseFloat(value);
-  value.innerText = leftValue;
   return convertValue;
 }
 
 // setText element function
 
-// function setTextElement (element, value){
-//      const textValue =
-// }
+function setTextElement(element, value) {
+  const textValue = getElementId(element);
+  textValue.innerText = value;
+}

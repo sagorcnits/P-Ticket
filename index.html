@@ -510,6 +510,7 @@
                 <p>
                   Seat
                   <span
+                    id="seat-count"
                     class="bg-[#1DD100] px-3 rounded-md text-[13px] text-white"
                     >0</span
                   >
@@ -518,22 +519,14 @@
                 <p>Price</p>
               </div>
               <div
-                class="*:flex *:items-center *:justify-between *:paragraph-color border-b-[1px] border-solid py-4 border-[#03071233] pb-3"
-              >
-                <div>
-                  <p>C2</p>
-                  <p>Economoy</p>
-                  <p>550</p>
-                </div>
-                <div class="mt-4">
-                  <p>C2</p>
-                  <p>Economoy</p>
-                  <p>550</p>
-                </div>
-              </div>
+                id="seat-item-list"
+                class="*:flex *:items-center *:justify-between *:paragraph-color *:mt-4 border-b-[1px] border-solid py-4 border-[#03071233] pb-3"
+              ></div>
               <div class="flex justify-between py-4">
                 <p class="text-xl font-bold">Total Price</p>
-                <p class="text-xl font-bold">BDT <span>1100</span></p>
+                <p class="text-xl font-bold">
+                  BDT <span id="total-price">00</span>
+                </p>
               </div>
               <div class="bg-white py-2 flex justify-between px-4 rounded-lg">
                 <input
@@ -547,7 +540,9 @@
               </div>
               <div class="flex justify-between py-4">
                 <p class="text-xl font-bold">Grand Total</p>
-                <p class="text-xl font-bold">BDT <span>1100</span></p>
+                <p class="text-xl font-bold">
+                  BDT <span id="grand-price">00</span>
+                </p>
               </div>
             </div>
             <div>

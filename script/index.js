@@ -101,7 +101,6 @@ function validationNextBtn() {
 }
 
 // sucsess modal function
-
 getElementId("next-btn").addEventListener("click", function () {
   added("head");
   added("main");

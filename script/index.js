@@ -13,7 +13,7 @@ for (let seat of seatBtn) {
     if (!targetValue.style.backgroundColor) {
       limitedTicketCount += 1;
       if (limitedTicketCount > 4) {
-        console.log("sorry");
+        alert("You all ready 4 Seat selected");
       } else {
         event.target.style.backgroundColor = "#1DD100";
         event.target.style.color = "white";
@@ -40,6 +40,7 @@ function updatCount() {
   // apply btn enable & disable
   if (limitedTicketCount >= 4) {
     getElementId("apply-btn").disabled = false;
+    getElementId("cupon-code").disabled = false;
     getElementId("apply-btn").style.backgroundColor = "#1DD100";
   }
   validationNextBtn();
@@ -110,9 +111,9 @@ getElementId("next-btn").addEventListener("click", function () {
 
 // continue function
 
-getElementId("continue").addEventListener("click", function () {
-  remove("head");
-  remove("main");
-  remove("footer");
-  added("sucsess-modal");
-});
+// getElementId("continue").addEventListener("click", function () {
+//   remove("head");
+//   remove("main");
+//   remove("footer");
+//   added("sucsess-modal");
+// });

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap");
+/* extra bold */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap");
+
+/* semibold */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.raleway-midium {
+  font-family: "Raleway", sans-serif;
+}
+
+.raleway-semi {
+  font-family: "Raleway", sans-serif;
+}
+
+.paragraph-color {
+  color: #030712b3;
+}

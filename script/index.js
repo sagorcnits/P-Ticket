@@ -13,7 +13,7 @@ for (let seat of seatBtn) {
     if (!targetValue.style.backgroundColor) {
       limitedTicketCount += 1;
       if (limitedTicketCount > 4) {
-        alert("You all ready 4 Seat selected");
+        alert("sorry! you allready selected 4 ticket");
       } else {
         event.target.style.backgroundColor = "#1DD100";
         event.target.style.color = "white";
@@ -52,18 +52,18 @@ getElementId("apply-btn").addEventListener("click", function () {
   const cupon = getElementId("cupon-code").value;
   if (cupon === "NEW15") {
     let discountPrice = (totalPrice * 15) / 100;
-    getElementId("grand-price").innerText = grandPrice - discountPrice;
+    getElementId("grand-price").innerText = totalPrice - discountPrice;
     getElementId("cupon-input").classList.add("hidden");
     getElementId("discount-price").innerText = discountPrice;
     getElementId("discount").classList.remove("hidden");
   } else if (cupon === "Couple 20") {
     let discountPrice = (totalPrice * 20) / 100;
-    getElementId("grand-price").innerText = grandPrice - discountPrice;
+    getElementId("grand-price").innerText = totalPrice - discountPrice;
     getElementId("cupon-input").classList.add("hidden");
     getElementId("discount-price").innerText = discountPrice;
     getElementId("discount").classList.remove("hidden");
   } else {
-    console.log("You are wrong");
+    alert("Invalid cupon code please try 'NEW15' or 'Couple 20'");
   }
 });
 
@@ -108,12 +108,3 @@ getElementId("next-btn").addEventListener("click", function () {
   added("footer");
   remove("sucsess-modal");
 });
-
-// continue function
-
-// getElementId("continue").addEventListener("click", function () {
-//   remove("head");
-//   remove("main");
-//   remove("footer");
-//   added("sucsess-modal");
-// });
